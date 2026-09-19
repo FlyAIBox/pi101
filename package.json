@@ -1,0 +1,26 @@
+{
+  "name": "pi101",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+	"test": "tsx --test test/*.test.ts",
+    "lab:01": "tsx labs/01-minimal-agent.ts",
+    "trace:summary": "tsx scripts/summarize-trace.ts"
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "0.85.1",
+    "@earendil-works/pi-ai": "0.85.1",
+    "@earendil-works/pi-telemetry": "0.85.1",
+    "typebox": "1.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "tsx": "4.22.1",
+    "typescript": "5.9.3"
+  }
+}
