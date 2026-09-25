@@ -20,6 +20,17 @@
 | 12 | [企业研发 Agent](12-enterprise-engineering-agent.md) | 多租户生产蓝图与验收清单 |
 | 13 | [给 Pi 加上本地语音输入](13-local-voice-input.md) | 快捷键听写与本地音视频转写 |
 
+## 扩展阅读
+
+`readings/` 收录 Earendil（pi 团队）的原文剪藏，中英对照。文件名前缀对应配合阅读的正文编号：`00` 放在 01 之前，`99` 放在全部正文之后。
+
+| 位置 | 文章 | 配合理由 |
+|---|---|---|
+| 01 之前 | [What is a Harness?](readings/00-what-is-a-harness.md) | 先建立 Harness 的定义和边界 |
+| 与 02 同读 | [Pi, Minimal and Performant](readings/02-pi-minimal-and-performant.md) | pi 为什么只给 4 个工具、极简 system prompt |
+| 与 05 同读（09 回看） | [Prompt Caching In Agents](readings/05-prompt-caching-in-agents.md) | context 设计如何影响缓存命中，进而影响成本与延迟 |
+| 全部正文之后 | [The High Ground](readings/99-the-high-ground.md) | 2026–2031 年软件"高地"在哪里，作为收尾展望 |
+
 ## 复现实验
 
 ```bash
