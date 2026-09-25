@@ -1,12 +1,12 @@
 # 01｜Agent 会调用工具，为什么仍不是产品
 
-> 状态：代码、类型检查和确定性测试已完成；真实 DeepSeek 轨迹需在本机配置 API key 后生成。
+> 状态：代码、类型检查和确定性测试已完成；真实模型轨迹需在本机配置 API key 后生成。
 
 ## 业务问题
 
 一个 demo 可以让模型查 CRM，再生成一段客户风险建议。但业务负责人真正关心的是：它查了哪个客户、使用了什么身份、有没有越权、失败后会不会重复发邮件、成本是多少、结论错了如何回放。工具调用成功，只证明模型能生成一个合法参数；它没有证明任务产生了正确业务终态。
 
-本篇把最小 demo 改造成一个可检查的闭环：DeepSeek 负责判断何时查询客户和怎样解释结果；确定性代码负责数据、权限、日志和停止边界。
+本篇把最小 demo 改造成一个可检查的闭环：模型负责判断何时查询客户和怎样解释结果；确定性代码负责数据、权限、日志和停止边界。
 
 ## pi 源码链
 
@@ -44,8 +44,6 @@ npm run check
 npm test
 
 export DEEPSEEK_API_KEY='...'
-# 可选，默认 deepseek-v4-flash
-export PI101_MODEL_ID='deepseek-v4-flash'
 npm run lab:01
 ```
 
@@ -62,7 +60,7 @@ agent_start
 turn_start
 message_start(role=assistant)
 message_update(...)
-message_end(provider=deepseek, model=..., usage=...)
+message_end(provider=..., model=..., usage=...)
 tool_execution_start(tool=lookup_customer, args=REDACTED)
 tool_execution_end(tool=lookup_customer, isError=false, result=REDACTED)
 turn_end(toolResultCount=1)

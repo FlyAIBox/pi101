@@ -7,8 +7,8 @@
 - pi release：`v0.85.1`，2026-09-05
 - Node.js：`>=22.19.0`
 - 语言：TypeScript
-- 默认真实模型：DeepSeek；Harness 与文章结论保持模型无关
-- 资料截止日期：2026-09-18
+- 模型接入集中在 `src/model.ts`；Harness 与文章结论保持模型无关
+- 资料截止日期：2026-09-25
 
 ## 快速开始
 
@@ -29,7 +29,7 @@ npm run trace:summary -- artifacts/agent-trace-....jsonl
 
 ## 内容结构
 
-- `articles/`：12 篇递进式实践文稿
+- `articles/`：13 篇递进式实践文稿
 - `labs/`：与文章对应的运行入口
 - `src/`：跨实验复用的模型、轨迹和业务工具模块
 - `research/`：官方源码、文档和外部一手资料研究底稿

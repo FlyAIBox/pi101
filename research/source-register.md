@@ -1,6 +1,6 @@
 # 证据源登记表
 
-更新时间：2026-09-18。优先级为固定版本源码/官方文档 > 官方工程文章 > 论文 > 当事人 X 原帖 > 社区观点。
+更新时间：2026-09-25。优先级为固定版本源码/官方文档 > 官方工程文章 > 论文 > 当事人 X 原帖 > 社区观点。
 
 ## pi
 
@@ -11,6 +11,13 @@
 - [pi v0.85.1 Agent 源码](https://github.com/earendil-works/pi/tree/v0.85.1/packages/agent)
 - [Tool durability](https://github.com/earendil-works/pi/blob/v0.85.1/packages/agent/docs/tool-durability.md)
 - [Assistant durability](https://github.com/earendil-works/pi/blob/v0.85.1/packages/agent/docs/assistant-durability.md)
+
+## Pi Voice
+
+- [@earendil-works/pi-voice on npm](https://www.npmjs.com/package/@earendil-works/pi-voice)
+- [Pi Voice README 固定提交](https://github.com/earendil-works/pi-voice/blob/f28e440bcc82ddad134cc6e54c8cc3f3f45eccdd/README.md)
+- [Pi Voice 扩展入口固定提交](https://github.com/earendil-works/pi-voice/blob/f28e440bcc82ddad134cc6e54c8cc3f3f45eccdd/src/index.ts)
+- [Pi Voice 文件转写固定提交](https://github.com/earendil-works/pi-voice/blob/f28e440bcc82ddad134cc6e54c8cc3f3f45eccdd/src/file-transcription.ts)
 
 ## Anthropic / Claude
 
